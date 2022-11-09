@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="./css/game.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/end.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1>Your result:</h1>
+            <h2 id="final-score">0</h2>
+            <button id="review" class="btn">Review Your Answers.</button>
+            <a href="./game.html" class="btn">Play again!</a>
+            <a id="go-home" href="./index.html" class="btn">Go home</a>
+        </div>
+        <div id="result" class="justify-center flex-column hidden">
+            <div id="counter">
+                <div id="counter-item">
+                    <p id="progress-text" class="counter-prefix">Question</p>
+                    <div id="progress-bar">
+                        <div id="progress-state"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="wrapper">
+                <h2 id="question"></h2>
+                <div class="choice-container">
+                    <p class="choice-prefix">A</p>
+                    <p class="choice-text" data-number="1"></p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">B</p>
+                    <p class="choice-text" data-number="2"></p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">C</p>
+                    <p class="choice-text" data-number="3"></p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">D</p>
+                    <p class="choice-text" data-number="4"></p>
+                </div>
+            </div>
+            <div class="pagination">
+                <button id="previous" class="btn">Previous</button>
+                <div></div>
+                <button id="next" class="btn">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

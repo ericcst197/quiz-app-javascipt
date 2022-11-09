@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Quiz</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/setting.css">
+    <script defer src="./js/setting.js"></script>
+    <script defer src="./js/game.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="home" class="flex-center flex-column">
+            <h1>Quick Quiz</h1>
+            <a id="startGame" class="btn" href="/game.html">Play</a>
+            <button id="setGame" class="btn">Setting</button>
+        </div>
+    </div>
+    <div id="setting" class="container hidden">
+        <div id="backdrop"></div>
+        <div class="wrapper flex-center flex-column">
+            <h2>Setting</h2>
+            <form action="#">
+                <div class="form-control">
+                    <div class="col-4">
+                        <label for="question-count">Number of Question</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="number" name="question-count" id="question-count" min="1" max="50" required>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <div class="col-4">
+                        <label for="category">Select Category</label>
+                    </div>
+                    <div class="col-6">
+                        <select name="category" id="category">
+                            <option value="">Any Category</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <div class="col-4">
+                        <label for="difficulty">Select Difficulty</label>
+                    </div>
+                    <div class="col-6">
+                        <select name="difficulty" id="difficulty">
+                            <option value="">Any Difficulty</option>
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <div class="col-4">
+                        <label for="type">Select Type</label>
+                    </div>
+                    <div class="col-6">
+                        <select name="type" id="type">
+                            <option value="">Any Type</option>
+                            <option value="multiple">Multiple Choice</option>
+                            <option value="boolean">True / False</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn">Confirm</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

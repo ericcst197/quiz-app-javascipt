@@ -1,0 +1,66 @@
+#setting{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#backdrop{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.2);
+}
+
+#setting .wrapper{
+    background-color:  rgb(238, 230, 255);
+    border-radius: 10px;
+    padding: 2rem;
+    z-index: 10;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+form{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.form-control{
+    margin-bottom: 2rem;
+    padding: 0 5rem;
+    display: flex;
+    font-size: 2rem;
+
+}
+
+.form-control label{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    cursor:pointer;
+}
+
+.form-control select,
+.form-control input{
+    width: 100%;
+    padding: 1rem;
+    border: .1rem solid #9966ff;
+    border-radius: 5px;
+}
+
+.form-control select:focus,
+.form-control input:focus{
+    border: .1rem solid #9966ff;
+    outline: .1rem solid #9966ff;
+    box-shadow: 0 0.4rem 1.4rem 0  rgb(238, 230, 255, 0.5);
+}
+
+form button{
+    margin-top: 3rem;
+}
+
